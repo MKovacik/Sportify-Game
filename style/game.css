@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'starvaderregular';
+    src: url('../font/star-webfont.eot');
+    src: url('../font/star-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/star-webfont.woff2') format('woff2'),
+         url('../font/star-webfont.woff') format('woff'),
+         url('../font/star-webfont.ttf') format('truetype'),
+         url('../font/star-webfont.svg#starvaderregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+h1 {
+    width: 100%;
+    height: 100px;
+    margin: 0 0 0 0;
+    background-color: black;
+}
+
+h1 a {
+	font-size: 1.0em;
+	text-align: center;
+    vertical-align: middle;
+    font-family: 'starvaderregular'!important;
+    color: yellow;
+}
+
+legend {
+    font-size: 18px;
+    color: magenta;
+    font-weight: bold;
+}
+
+dl {
+    padding: 5px;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 200px;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+dt:after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 50px;
+    padding: 0 0 10px 0;
+}
+
+.button {
+    border-color: dimgray;
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgrey;
+    opacity: 0.6;
+    text-align: center;
+    vertical-align: middle;
+}
+.button:hover {
+    border-color: dimgray;
+    border-style: solid;
+    border-width: 1px;
+    background-color: dimgray;
+    opacity: 0.6;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button_game_with{
+    width: 665px;
+    height: 40px;
+}
+
+.button_result_with{
+    width: 100%;
+    height: 40px;
+}
+
+.button_resolve_xml_with {
+    width: 300px;
+}
+
+.button_text{
+    font-size: 24px;
+    display: inline-block;
+    text-align: left;
+}
+
+.questions {
+    border-color: deepskyblue;
+    border-style: solid;
+    border-width: 1px;
+    background-color: skyblue;
+    opacity: 0.6;
+    text-align: left;
+}
+
+.questions:hover {
+    border-color: deepskyblue;
+    border-style: solid;
+    border-width: 1px;
+    background-color: deepskyblue;
+    opacity: 0.6;
+    text-align: left;
+}
+
+.answers {
+    border-color: dimgray;
+    border-style: solid;
+    border-width: 1px;
+    background-color: lightgrey;
+    opacity: 0.6;
+    text-align: left;
+}
+
+.answers:hover {
+    border-color: dimgray;
+    border-style: solid;
+    border-width: 1px;
+    background-color: dimgray;
+    opacity: 0.6;
+    text-align: left;
+}
+
+#sortable1,
+#sortable2 {
+    border: 1px solid gray;
+    width: 322px;
+    min-height: 200px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 10px;
+}
+
+#sortable1 li,
+#sortable2 li {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 300px;
+}

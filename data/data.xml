@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Examples>
+    <selected>2</selected>
+	<work1>
+        <Row>Class Program&lt;br&gt;{&lt;br&gt;static void Main(string[] args)&lt;br&gt;{</Row>
+        <Row>int a = 10;&lt;br&gt;for (int i = 0; i &lt; a; i++)&lt;br&gt;{</Row>
+        <Row>do&lt;br&gt;{&lt;br&gt;Console.Write(&quot;*&quot;);&lt;br&gt;} while(i &lt; 0);</Row>
+        <Row>}if (i &lt;= 3 ) Console.Write( &quot;#&quot;);</Row>    
+        <Row>}&lt;br&gt;Console.ReadLine();&lt;br&gt;}&lt;br&gt;}</Row>
+        <Image>Image/Solution.png</Image>
+	</work1>
+    <work2>
+        <Row>e1</Row>
+        <Row>e2</Row>
+        <Row>e3</Row>
+        <Row>e4</Row>
+        <Row>e5</Row>
+        <Row>e6</Row>
+        <Image>Image/Solution.png</Image>
+	</work2>
+</Examples>

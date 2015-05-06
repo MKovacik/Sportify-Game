@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Examples>
+	<work1>
+        <Row>Class Program<br>{<br>static void Main(string[] args)<br>{</Row>
+        <Row>int a = 10;<br>for (int i = 0; i < a; i++)<br>{</Row>
+        <Row>do<br>{<br>Console.Write("*");<br>} while(i < 0);</Row>
+        <Row>}if (i <= 3 ) Console.Write( "#");</Row>    
+        <Row>}<br>Console.ReadLine();<br>}<br>}</Row>
+	</work1>
+    <work2>
+        <Row>e1</Row>
+        <Row>e2</Row>
+        <Row>e3</Row>
+        <Row>e4</Row>
+        <Row>e5</Row>
+        <Row>e6</Row>
+	</work2>
+</Examples>

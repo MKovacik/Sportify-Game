@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>T-Systems sporty</title>
+    <script src="script/jquery-1.10.2.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <!--bootstrap js-->
+    <!--<script src="Bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="script/code.object.js"></script>
+    <script src="script/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/game.css">
+    <!--bootstrap css-->
+    <!--<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+</head>
+
+<body>
+     <header>
+         <h1><a>SporTify - STARWARS</a></h1>
+    </header>
+    <article>
+        <fieldset>
+            <legend>The Game</legend>
+            <div >
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <ul id="sortable1" class="connectedSortable" placeholder="Put the code fragment here.">
+
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="sortable2" class="connectedSortable" >
+
+                                    </ul>
+                                    <!--<ul id="sortable2" class="connectedSortable">
+                                        <li id="0" class="questions">Class Program<br>{<br>static void Main(string[] args)<br>{</li>
+                                        <li id="1" class="questions">int a = 10;<br>for (int i = 0; i < a; i++)<br>{</li>
+                                        <li id="2" class="questions">do<br>{<br>Console.Write("*");<br>} while(i < 0);</li>
+                                        <li id="3" class="questions">if (i <= 3 ) Console.Write( "#");</li>
+                                        <li id="4" class="questions">}<br>Console.ReadLine();<br>}<br>}</li>-->
+                                    </ul>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>Code Result</legend>
+                                        <img src="Image/Solution.png" alt="some_text">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="target" class="button button_game_with">
+                           <div class="button_text">I am Done!</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+        </fieldset>
+        <fieldset>
+        <legend>Result</legend>
+            <div id="timerstart" class="button button_result_with">
+                <div class="button_text">Game Start</div>
+            </div>
+            <dl>
+                <dt>Status</dt><dd id="statusfield">May the Force be with you.</dd>
+                <dt>Correct answers count</dt><dd id="canswers">-</dd>
+                <dt>Incorrect answers count</dt><dd id="ianswers">-</dd>
+                <dt>Time</dt><dd id="timer">-</dd>
+            </dl>
+        </fieldset>         
+    </article>
+</body>
+
+</html>
