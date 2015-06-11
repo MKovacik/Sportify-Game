@@ -25,8 +25,10 @@ $(function () {
                 //Return back tags
                 text = text.replace(/&lt;Examples&gt;/g,"<Examples>");
                 text = text.replace(/&lt;Row&gt;/g,"<Row>");
+                text = text.replace(/&lt;Wording&gt;/g,"<Wording>");
                 text = text.replace(/&lt;\/Examples&gt;/g,"</Examples>");
                 text = text.replace(/&lt;\/Row&gt;/g,"</Row>");
+                text = text.replace(/&lt;\/Wording&gt;/g,"</Wording>");
                 text = text.replace(/&lt;selected&gt;/g,"<selected>");
                 text = text.replace(/&lt;\/selected&gt;/g,"</selected>");
                 text = text.replace(/&lt;Image&gt;/g,"<Image>");
@@ -44,6 +46,7 @@ $(function () {
                 text = text.replace(/9&gt;/g,"9>");
                 text = text.replace(/0&gt;/g,"0>");
                 $("#resolvedtext").text(text);
+                //TODO </Wording>
                 
             };
         }

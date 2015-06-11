@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Examples>
-    <selected>2</selected>
-	<work1>
-        <Row>Class Program&lt;br&gt;{&lt;br&gt;static void Main(string[] args)&lt;br&gt;{</Row>
-        <Row>int a = 10;&lt;br&gt;for (int i = 0; i &lt; a; i++)&lt;br&gt;{</Row>
-        <Row>do&lt;br&gt;{&lt;br&gt;Console.Write(&quot;*&quot;);&lt;br&gt;} while(i &lt; 0);</Row>
-        <Row>}if (i &lt;= 3 ) Console.Write( &quot;#&quot;);</Row>    
-        <Row>}&lt;br&gt;Console.ReadLine();&lt;br&gt;}&lt;br&gt;}</Row>
-        <Image>Image/Solution.png</Image>
-	</work1>
-    <work2>
-        <Row>e1</Row>
-        <Row>e2</Row>
-        <Row>e3</Row>
-        <Row>e4</Row>
-        <Row>e5</Row>
-        <Row>e6</Row>
-        <Image>Image/Solution.png</Image>
-	</work2>
-</Examples>
+ <Examples>
+ <selected>1</selected>
+ <work1>
+ <Row>Class Program&lt;br&gt;{&lt;br&gt;static void Main(string[] args)&lt;br&gt;{</Row>
+ <Row>int a = 10;&lt;br&gt;for (int i = 0; i &lt; a; i++)&lt;br&gt;{</Row>
+ <Row>do&lt;br&gt;{&lt;br&gt;Console.Write(&quot;*&quot;);&lt;br&gt;} while(i &lt; 0);</Row>
+ <Row>if (i &lt;= 3 ) Console.Write( &quot;#&quot;);</Row> 
+ <Row>}&lt;br&gt;Console.ReadLine();&lt;br&gt;}&lt;br&gt;}</Row>
+ <Image>Image/Solutions/Solution01.png</Image>
+ <Wording>4 sharps(#) and 10 stars(*)</Wording>
+ </work1>
+ <work2>
+ <Row>Class Program&lt;br&gt;{&lt;br&gt;static void Main(string[] args)&lt;br&gt;{</Row>
+ <Row>string[] arr = new string[] {&quot;One&quot;, &quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;};</Row>
+ <Row>foreach (string s in arr) &lt;br&gt; {</Row>
+ <Row>if (s.ToLower() == &quot;one&quot;)&lt;br&gt;{&lt;br&gt;continue;&lt;br&gt;}</Row>
+ <Row>Console.WriteLine(s);&lt;br&gt;}&lt;br&gt;Console.ReadLine();&lt;br&gt;}&lt;br&gt;}</Row>
+ <Image>Image/Solutions/Solution02.png</Image>
+ <Wording>two three four</Wording>
+ </work2>
+ <work3>
+ <Row>Class Program&lt;br&gt;{&lt;br&gt;private static int getIncreasedNumber(int number, int increase)&lt;br&gt;{</Row>
+ <Row>return number + increase;&lt;br&gt;}</Row>
+ <Row>static void Main(string[] args)&lt;br&gt;{&lt;br&gt;Console.Write(&quot;Please insert Number: &quot;);&lt;br&gt;int n = Convert.ToInt16(Console.ReadLine());</Row>
+ <Row>Console.Write(&quot;Please insert value of increasing: &quot;);&lt;br&gt;int i = Convert.ToInt16(Console.ReadLine());</Row>
+ <Row>Console.Write(&quot;Result: &quot;);&lt;br&gt;Console.WriteLine(getIncreasedNumber(n,i));</Row>
+ <Row>Console.ReadLine();&lt;br&gt;}&lt;br&gt;}</Row>
+ <Image>Image/Solutions/Solution03.png</Image>
+ <Wording>if you insert Number 1 and Increase Number 2 then you gat result 3</Wording>
+ </work3>
+ <work4>
+ <Row>public class Program {&lt;br&gt;public static final String YODA = &quot;THERE IS NO TRY&quot;;</Row>
+ <Row>public static void main(String[] args) {&lt;br&gt;Program program = new Program();</Row>
+ <Row>program.doStuff();&lt;br&gt;System.out.println(YODA);&lt;br&gt;}</Row>
+ <Row>private void doStuff(){&lt;br&gt;String says = &quot;DO OR DO NOT ... &quot;;&lt;br&gt;boolean toughCondition;</Row>
+ <Row>if(says instanceof Object){&lt;br&gt;toughCondition = true;&lt;br&gt;}else{&lt;br&gt;toughCondition = false;&lt;br&gt;}</Row>
+ <Row>do{&lt;br&gt;System.out.print(says);&lt;br&gt;}while(!toughCondition);&lt;br&gt;}&lt;br&gt;}</Row>
+ <Image>Image/Solutions/Solution04.png</Image>
+ <Wording>Do or do not ... there is no try</Wording>
+ </work4>
+ <work5>
+ <Row>example1</Row>
+ <Row>example2</Row>
+ <Row>example3</Row>
+ <Row>example4</Row>
+ <Row>example5</Row>
+ <Row>example6</Row>
+ <Image>Image/Solutions/Solution04.png</Image>
+ <Wording>text</Wording>
+ </work5>
+ </Examples>

@@ -1,7 +1,9 @@
 /// <reference path="../typings/jquery/jquery.d.ts"/>
  $(function () {
      var oldList, newList, item;
-
+     
+     var docid = _spGetQueryParam("id");
+     
      $(".connectedSortable").sortable({
          start: function (event, ui) {
              item = ui.item;
@@ -53,7 +55,7 @@
              $("#ianswers").html(incoret);
 
          } else {
-             $("#statusfield").html("Mission faild.");
+             $("#statusfield").html("Mission failed.");
              count = 0;
              $("#sortable2 li").each(function (i, el) {
                 count = count + 1;
@@ -65,7 +67,11 @@
      
      var interval;
      
-     $("#timerstart").click(function () {
+     function timerstartFunction()
+     {
+        $("#gemediv_display").css("z-index", -10);
+        $("#gemediv_display").css("opacity", 0);
+         
         var hour = 0;
         var min = 0;
         var sec = 0;
@@ -95,6 +101,16 @@
             if (hour<10){ mhour = "0" + hour; }
             $("#timer").html(mhour + ": " + mmin + ": " + msec);
         }, 1000);
+
+     }
+     //Bind Timer function on page load
+     $("#timerstart").bind("click", timerstartFunction);
+
+     $("#timerstart").click(function () {
+         //unbind timer function on page load
+        $("#timerstart").unbind("click", timerstartFunction);
+        //TODO: css update
+        //$("#gemediv_display").css
      });
      
      function _spGetQueryParam(p) {
@@ -110,12 +126,9 @@
             }
         }
      }
-
-     var docid = _spGetQueryParam("id");
-     
+    
      //$.when(GameLoadDataNamespace.getData($("#sortable2"),"data/data.xml",1,deferred)).done(GameRandomizerNamespace.getRandomLi($("#sortable2"), 0, 5 , 10));
-     GameLoadDataNamespace.getData($("#sortable2"),"data/data.xml",docid);
+     GameLoadDataNamespace.getData($("#sortable2"),$("#imgsolution"),$("#wordingsolution"),$("#gemediv_display"), $("#gamediv"),"data/data.xml",docid);
      //GameRandomizerNamespace.getRandomLi($("#sortable2"), 0, 5 , 10);
-     
      
  })

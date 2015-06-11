@@ -1,5 +1,12 @@
 * { padding: 0; margin: 0; }
 
+@font-face {
+    font-family: 'starvaderregular';
+    src: url('../font/mb_starjedi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html
 {
 	width: 100%;
@@ -180,11 +187,11 @@ h1 sub
 {
 	position: absolute;
 	top: 100%;
-	-webkit-animation: scroll 60s linear 4s infinite;
-	-moz-animation: scroll 60s linear 4s infinite;
-	-ms-animation: scroll 60s linear 4s infinite;
-	-o-animation: scroll 60s linear 4s infinite;
-	animation: scroll 60s linear 4s infinite;
+	-webkit-animation: scroll 120s linear 4s infinite;
+	-moz-animation: scroll 120s linear 4s infinite;
+	-ms-animation: scroll 120s linear 4s infinite;
+	-o-animation: scroll 120s linear 4s infinite;
+	animation: scroll 120s linear 4s infinite;
 }
 
 /* animation */

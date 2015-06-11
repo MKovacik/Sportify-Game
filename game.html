@@ -17,12 +17,17 @@
 
 <body>
      <header>
-         <h1><a>SporTify - STARWARS</a></h1>
+         <!--<h1><a>SporTify - STARWARS</a></h1>-->
+         <img src="Image/SDDStarWarsTransparent.png" alt="Software development and design">
     </header>
     <article>
         <fieldset>
             <legend>The Game</legend>
-            <div >
+            <div id="gamediv_big">
+            <div id="gemediv_display">
+                Please start game!
+            </div>
+            <div id="gamediv">
             <table>
                 <tr>
                     <td>
@@ -48,7 +53,26 @@
                                 <td>
                                     <fieldset>
                                         <legend>Code Result</legend>
-                                        <img src="Image/Solution.png" alt="some_text">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a id="wordingsolution"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img id="imgsolution" src="Image/Solutions/Solution01.png" alt="Solution.png"></img>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div id="target" class="button button_game_with">
+                                                        <div class="button_text">I am Done!</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        
                                     </fieldset>
                                 </td>
                             </tr>
@@ -56,20 +80,22 @@
 
                     </td>
                 </tr>
-                <tr>
+                <!--<tr>
                     <td>
                         <div id="target" class="button button_game_with">
                            <div class="button_text">I am Done!</div>
                     </div>
-                </td>
+                </td>-->
             </tr>
         </table>
+        </div>
         </div>
         </fieldset>
         <fieldset>
         <legend>Result</legend>
+            <div id=resultdiv>
             <div id="timerstart" class="button button_result_with">
-                <div class="button_text">Game Start</div>
+                <div class="button_text">Start Game</div>
             </div>
             <dl>
                 <dt>Status</dt><dd id="statusfield">May the Force be with you.</dd>
@@ -77,6 +103,7 @@
                 <dt>Incorrect answers count</dt><dd id="ianswers">-</dd>
                 <dt>Time</dt><dd id="timer">-</dd>
             </dl>
+            </div>
         </fieldset>         
     </article>
 </body>

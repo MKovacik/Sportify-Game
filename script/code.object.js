@@ -15,7 +15,7 @@ var GameRandomizerNamespace = {
 
 
 var GameLoadDataNamespace = {
-    getData: function(ulobject, file, index)
+    getData: function(ulobject, img, wording, modal, gheight, file, index)
     {
         $(document).ready(function()
         {
@@ -40,7 +40,21 @@ var GameLoadDataNamespace = {
                     ulobject.append('<li id='+ii+' class="questions">'+$(this).text()+'</li>');
                     ii++;
                 });
+                $(this).find("Image").each(function(){
+                    img.attr("src", $(this).text());
+                    ii++;
+                });
+                $(this).find("Wording").each(function(){
+                    wording.text($(this).text());
+                    ii++;
+                });
             });
+            
+            var h = gheight.height()+60;
+            modal.css("height", h);
+            //var h = h - 60;
+            //modal.css("line-height", h);
+            
             
             GameRandomizerNamespace.getRandomLi($("#sortable2"), 0, ii , 10);
         }
